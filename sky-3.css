@@ -1,0 +1,25 @@
+/* 
+Custom CSS Stylesheet
+
+Developed by Selman Tabet @ https://selman.io/
+------------------------------------------------
+Developed for the Sky Placement Test 2023
+*/
+
+.dark-theme {
+  --primary-color: var(--gray-500, #000) !important;
+  --secondary-color: var(--gray-100, #fff) !important;
+}
+
+ul > li:nth-child(3n) {
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+}
+
+p {
+  font-size: clamp(
+    var(--min-font-size),
+    var(--font-size),
+    var(--max-font-size)
+  );
+}
